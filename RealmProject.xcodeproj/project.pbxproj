@@ -13,6 +13,10 @@
 		1D44D2F01EA70AEB005045BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D44D2EE1EA70AEB005045BE /* Main.storyboard */; };
 		1D44D2F21EA70AEB005045BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D44D2F11EA70AEB005045BE /* Assets.xcassets */; };
 		1D44D2F51EA70AEB005045BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D44D2F31EA70AEB005045BE /* LaunchScreen.storyboard */; };
+		4B3720741EA845D400DEF3BA /* AreaForDataEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3720731EA845D400DEF3BA /* AreaForDataEntity.m */; };
+		4B3720771EA846C500DEF3BA /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3720761EA846C500DEF3BA /* TestViewController.m */; };
+		4B3720791EA848CA00DEF3BA /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3720781EA848CA00DEF3BA /* Foundation+Log.m */; };
+		4B37207F1EA8779300DEF3BA /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 4B37207E1EA8779300DEF3BA /* default.realm */; };
 		4BA04FBA1EA7590C0055D214 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA04FB91EA7590C0055D214 /* Post.m */; };
 		4BA04FBD1EA759F70055D214 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA04FBC1EA759F70055D214 /* User.m */; };
 		DF3CB78E9B3CA81D4B107D43 /* Pods_RealmProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93E32002B77933EA3433C60 /* Pods_RealmProject.framework */; };
@@ -29,6 +33,12 @@
 		1D44D2F11EA70AEB005045BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D44D2F41EA70AEB005045BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D44D2F61EA70AEB005045BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B3720721EA845D400DEF3BA /* AreaForDataEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AreaForDataEntity.h; sourceTree = "<group>"; };
+		4B3720731EA845D400DEF3BA /* AreaForDataEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AreaForDataEntity.m; sourceTree = "<group>"; };
+		4B3720751EA846C500DEF3BA /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		4B3720761EA846C500DEF3BA /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		4B3720781EA848CA00DEF3BA /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		4B37207E1EA8779300DEF3BA /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		4BA04FB81EA7590C0055D214 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
 		4BA04FB91EA7590C0055D214 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		4BA04FBB1EA759F70055D214 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -71,10 +81,13 @@
 		1D44D2E41EA70AEB005045BE /* RealmProject */ = {
 			isa = PBXGroup;
 			children = (
+				4B37207E1EA8779300DEF3BA /* default.realm */,
 				1D44D2E81EA70AEB005045BE /* AppDelegate.h */,
 				1D44D2E91EA70AEB005045BE /* AppDelegate.m */,
 				1D44D2EB1EA70AEB005045BE /* ViewController.h */,
 				1D44D2EC1EA70AEB005045BE /* ViewController.m */,
+				4B3720751EA846C500DEF3BA /* TestViewController.h */,
+				4B3720761EA846C500DEF3BA /* TestViewController.m */,
 				1D44D2EE1EA70AEB005045BE /* Main.storyboard */,
 				1D44D2F11EA70AEB005045BE /* Assets.xcassets */,
 				1D44D2F31EA70AEB005045BE /* LaunchScreen.storyboard */,
@@ -83,6 +96,9 @@
 				4BA04FB91EA7590C0055D214 /* Post.m */,
 				4BA04FBB1EA759F70055D214 /* User.h */,
 				4BA04FBC1EA759F70055D214 /* User.m */,
+				4B3720721EA845D400DEF3BA /* AreaForDataEntity.h */,
+				4B3720731EA845D400DEF3BA /* AreaForDataEntity.m */,
+				4B3720781EA848CA00DEF3BA /* Foundation+Log.m */,
 				1D44D2E51EA70AEB005045BE /* Supporting Files */,
 			);
 			path = RealmProject;
@@ -175,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D44D2F51EA70AEB005045BE /* LaunchScreen.storyboard in Resources */,
+				4B37207F1EA8779300DEF3BA /* default.realm in Resources */,
 				1D44D2F21EA70AEB005045BE /* Assets.xcassets in Resources */,
 				1D44D2F01EA70AEB005045BE /* Main.storyboard in Resources */,
 			);
@@ -237,9 +254,12 @@
 			files = (
 				4BA04FBD1EA759F70055D214 /* User.m in Sources */,
 				1D44D2ED1EA70AEB005045BE /* ViewController.m in Sources */,
+				4B3720771EA846C500DEF3BA /* TestViewController.m in Sources */,
 				1D44D2EA1EA70AEB005045BE /* AppDelegate.m in Sources */,
 				1D44D2E71EA70AEB005045BE /* main.m in Sources */,
 				4BA04FBA1EA7590C0055D214 /* Post.m in Sources */,
+				4B3720741EA845D400DEF3BA /* AreaForDataEntity.m in Sources */,
+				4B3720791EA848CA00DEF3BA /* Foundation+Log.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
